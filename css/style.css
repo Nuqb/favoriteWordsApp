@@ -1,0 +1,122 @@
+* {
+    font-family: "Quicksand", serif;
+}
+body {
+    background-color: rgb(41, 38, 38);
+}
+#word-form {
+    display: grid;
+    justify-content: center; /* Centre horizontalement */
+}
+
+#word-form input {
+    padding: 1vh;
+    margin: .5vh;
+    width: 15vh;
+}
+
+#word-form textarea {
+    padding: 1vh;
+    margin: .5vh;
+    width: 15vh;
+}
+
+#word-form button {
+    padding: 1vh;
+    margin: .5vh;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-buttons {
+    display: grid;
+    width: 15vh;
+    margin: 1vh;
+}
+
+.user-buttons button {
+    margin: .5vh;
+    padding: 1vh;
+}
+
+.color-button {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    align-items: center; /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement */
+    text-align: center;
+}
+
+.color-button button {
+    padding: 1vh;
+    margin: .5vh;
+}
+
+.color-button > * {
+    margin: .5vh;
+    width: 10vh;
+}
+
+.color-button label {
+    width: 20vh;
+}
+
+h1 {
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border-color: black;
+    background-color: black;
+    color: white;
+    width: 25vh;
+    padding: 1vh;
+    margin: 1vh auto;
+    border-radius: 1vh;
+}
+
+label {
+    color: white;
+    background-color: black;
+    padding: .5vh;
+    border-radius: 1vh;
+}
+
+button {
+    background-color: rgb(165, 165, 165);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1); /* Slightly increase the size (10%) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+section {
+    text-align: center;
+}
+
+section h3 {
+    background-color: black;
+    color: white;
+    width: 20vh;
+    margin: 0 auto;
+    margin-top: 1vh;
+    font-weight: 300;
+    padding: 1vh;
+    border-radius: 1vh;
+}
+
+section p {
+    color: white;
+    width: 20vh;
+    margin: 0 auto;
+    margin-top: 1vh;
+    font-weight: 300;
+    padding: 1vh;
+    border-radius: 1vh;
+}

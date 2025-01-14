@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title> Favorite Words</title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4f992d83bb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div class="top-container">
+
+            <div class="color-button">
+                <label>Select Color</label>
+                <input type="color" id="color-picker">
+                <button id="save-color-button">Save Color</button>
+            </div>
+
+            <div class="user-buttons">
+                <button id="sign-up-toggle-button" class="toggle-button">Sign Up</button>
+                <button id="log-in-toggle-button" class="toggle-button">Log In</button>
+                <button id="sign-out-button">Sign Out</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <h1>Favorite Words</h1>
+
+        <!-- <button id="sign-up-button">Sign up</button> -->
+        <div class="sign-up-form" style="display: none;">
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input id="input-first-name" type="text" placeholder="First name">
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input id="input-last-name" type="text" placeholder="Last name">
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input id="input-email" type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input id="input-password" type="password" placeholder="Password">
+            </div>
+            <button id="create-account-button">Create Account</button>
+        </div>
+        
+        <div class="log-in-form" style="display: none;">
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input id="log-in-input-email" type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input id="log-in-input-password" type="password" placeholder="Password">
+            </div>
+            <button id="login-button">Log In</button>
+        </div>
+        
+        <div id="word-form">
+            <input id="input-word" placeholder="Enter a word">
+            <input id="input-language-origin" placeholder="Enter a language">
+            <textarea id="input-word-definition" placeholder="Enter a definition"></textarea>
+            <button id="add-word-button">Add Word<i class="fa-solid fa-plus"></i></button>
+            <button id="save-word-button">Save Word<i class="fa-regular fa-floppy-disk"></i></button>
+        </div>
+
+        <section>
+
+
+        </section>
+
+        <script src="../js/app.js"></script>
+        <!-- <script src="../js/modalLogic.js"></script> -->
+    </body>
+</html>
