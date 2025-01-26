@@ -36,6 +36,12 @@ createAccountButton.onclick = function() {
     let inputLastName = document.getElementById("input-last-name");
     let inputEmail = document.getElementById("input-email");
     let inputPassword = document.getElementById("input-password");
+
+    if (!inputFirstName.value || !inputLastName.value || !inputEmail.value || !inputPassword.value) {
+        alert("Please fill out all fields");
+        return;
+    }
+
     let data = "first_name=" + encodeURIComponent(inputFirstName.value);
     data += "&last_name=" + encodeURIComponent(inputLastName.value);
     data += "&email=" + encodeURIComponent(inputEmail.value);
@@ -56,8 +62,15 @@ createAccountButton.onclick = function() {
                 inputLastName.value = "";
                 inputEmail.value = "";
                 inputPassword.value = "";
+                alert("account created");
+
+                const signUpForm = document.querySelector(".sign-up-form");
+                signUpForm.style.display = "none";
+                signOutButton.style.display = "block";
+
             } else {
                 console.log(response.text)
+                alert("Error creating account, email is already in use!")
             }
         })
     })
@@ -65,10 +78,15 @@ createAccountButton.onclick = function() {
 
 let loginButton = document.getElementById("login-button");
 loginButton.onclick = function authenticateUserOnServer() {
-
+    const logInForm = document.querySelector(".log-in-form");
     let inputEmail = document.getElementById("log-in-input-email");
     let inputPassword = document.getElementById("log-in-input-password");
-    if (inputEmail.value == "" || inputPassword.value == ""){return}
+
+    if (!inputEmail.value || !inputPassword.value) {
+        alert("Please fill out all fields");
+        return;
+    }
+
     let data = "email=" + encodeURIComponent(inputEmail.value);
     data += "&password=" + encodeURIComponent(inputPassword.value);
     console.log(data);
@@ -89,6 +107,8 @@ loginButton.onclick = function authenticateUserOnServer() {
 
             inputEmail.value = "";
             inputPassword.value = "";
+            logInForm.style.display = "none";
+            signOutButton.style.display = "block";
             clearLoadedWords();
             loadWordsFromServer();
             } else {
@@ -276,25 +296,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const signUpForm = document.querySelector(".sign-up-form");
     const logInForm = document.querySelector(".log-in-form");
 
-    // Toggle sign-up form visibility
     signUpToggleButton.addEventListener("click", function () {
         signUpForm.style.display =
             signUpForm.style.display === "none" || signUpForm.style.display === "" ? "block" : "none";
     });
 
-    // Toggle log-in form visibility
     logInToggleButton.addEventListener("click", function () {
         logInForm.style.display =
             logInForm.style.display === "none" || logInForm.style.display === "" ? "block" : "none";
     });
 
-    // Show the "Sign Out" button after login
-    const loginButton = document.getElementById("login-button");
-    loginButton.addEventListener("click", function () {
-        // Simulate a successful login
-        logInForm.style.display = "none";
-        signOutButton.style.display = "block";
-    });
 });
 
 

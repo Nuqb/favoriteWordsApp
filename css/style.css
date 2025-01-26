@@ -1,30 +1,45 @@
 * {
     font-family: "Quicksand", serif;
 }
+
 body {
     background-color: rgb(41, 38, 38);
 }
+
+body, html {
+    overflow-x: hidden; 
+}
+
 #word-form {
     display: grid;
-    justify-content: center; /* Centre horizontalement */
+    justify-content: center;
 }
 
 #word-form input {
-    padding: 1vh;
-    margin: .5vh;
-    width: 15vh;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    width: 20rem;
 }
 
 #word-form textarea {
-    padding: 1vh;
-    margin: .5vh;
-    width: 15vh;
+    padding: 0.5rem;
+    margin: 0.25rem; 
+    width: 20rem;
 }
 
 #word-form button {
-    padding: 1vh;
-    margin: .5vh;
+    padding: 0.5rem;
+    margin: 0.25rem;
 }
+
+.input-box {
+    display: flex;}
+
+.input-box input {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+} 
 
 .top-container {
     display: flex;
@@ -33,35 +48,35 @@ body {
 
 .user-buttons {
     display: grid;
-    width: 15vh;
-    margin: 1vh;
+    width: 15rem;
+    margin: 1rem;
 }
 
 .user-buttons button {
-    margin: .5vh;
-    padding: 1vh;
+    margin: 0.25rem;
+    padding: 0.5rem;
 }
 
 .color-button {
     display: flex;
-    flex-direction: column; /* Aligne les éléments en colonne */
-    align-items: center; /* Centre horizontalement */
-    justify-content: center; /* Centre verticalement */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 .color-button button {
-    padding: 1vh;
-    margin: .5vh;
+    padding: 0.5rem;
+    margin: 0.25rem;
 }
 
 .color-button > * {
-    margin: .5vh;
-    width: 10vh;
+    margin: 0.25rem;
+    width: 10rem;
 }
 
 .color-button label {
-    width: 20vh;
+    width: 15rem;
 }
 
 h1 {
@@ -72,17 +87,17 @@ h1 {
     border-color: black;
     background-color: black;
     color: white;
-    width: 25vh;
-    padding: 1vh;
-    margin: 1vh auto;
-    border-radius: 1vh;
+    width: 25rem;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
 }
 
 label {
     color: white;
     background-color: black;
-    padding: .5vh;
-    border-radius: 1vh;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
 }
 
 button {
@@ -92,8 +107,8 @@ button {
 }
 
 button:hover {
-    transform: scale(1.1); /* Slightly increase the size (10%) */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 section {
@@ -103,20 +118,20 @@ section {
 section h3 {
     background-color: black;
     color: white;
-    width: 20vh;
+    width: 15rem;
     margin: 0 auto;
-    margin-top: 1vh;
+    margin-top: 1rem;
     font-weight: 300;
-    padding: 1vh;
-    border-radius: 1vh;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 section p {
     color: white;
-    width: 20vh;
+    width: 15rem;
     margin: 0 auto;
-    margin-top: 1vh;
+    margin-top: 1rem;
     font-weight: 300;
-    padding: 1vh;
-    border-radius: 1vh;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
