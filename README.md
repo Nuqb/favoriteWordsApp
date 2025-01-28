@@ -1,9 +1,8 @@
 # Favorite Words Web Application
 
-This is a web application I made while learning web applications in one of my classes. This isnt anything advanced but the main idea is showing how this was made with **JavaScript without frameworks** and getting some practice with **full-stack development** by managing a data base, sessions, and users.
+This is a web application I made while learning web applications in one of my classes. This isnt anything advanced but the main idea is showing how this was made with **JavaScript without frameworks** and getting some practice with **full-stack development** by managing a data base, sessions, and users. This does not work with pages because it uses localhost so if you want to try it yourself you will need to clone it. Anyway I hope this can express some of my capabilities.
 
-
-A web application that allows users to store, manage, and explore their favorite words, along with their language of origin and definitions. The application features user accounts, session management, and a persistent database.
+This is a web application that allows users to store, manage, and explore their favorite words, along with their language of origin and definitions. The application features user accounts, session management, and a persistent database.
 
 ## Features
 
