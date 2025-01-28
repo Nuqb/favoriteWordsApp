@@ -61,13 +61,13 @@ A web application that allows users to store, manage, and explore their favorite
 
 ## Project Structure
 /Directory
-├── app.js                # Frontend JavaScript logic
-├── index.html            # Frontend HTML structure
-├── style.css             # Custom styles for the application
-├── server.py             # Flask API backend
-├── session_store.py      # Custom session management
-├── words.py              # Database operations
-├── words_db.db           # SQLite database file
+├── app.js                # Frontend JavaScript logic <br>
+├── index.html            # Frontend HTML structure <br>
+├── style.css             # Custom styles for the application <br>
+├── server.py             # Flask API backend <br>
+├── session_store.py      # Custom session management <br>
+├── words.py              # Database operations <br>
+├── words_db.db           # SQLite database file <br>
 
 ## API Endpoints
 
